@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bare - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+      body {
+        padding-top: 54px;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 56px;
+        }
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+			
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="mt-5">Droplog Mainpage</h1>
+			
+<p id="demo"></p>
+
+<script>
+
+
+var myObj,i, j, x = "";
+/*myObj = {"bosses":[{"name":"General Graardor","drops":[{"name":"100% Drops","items":[{"name":"Big bones","amount":1}]},{"name":"Weapons","items":[{"name":"Rune 2h sword","amount":1},{"name":"Rune pickaxe","amount":1},{"name":"Rune longsword","amount":1},{"name":"Rune sword","amount":1}]},{"name":"Armour","items":[{"name":"Rune platebody","amount":1},{"name":"Bandos Tassets","amount":1},{"name":"Bandos Chestplate","amount":1},{"name":"Bandos Boots","amount":1}]},{"name":"Runes and Ammunition","items":[{"name":"Nature rune","amount":65}]},{"name":"Gems and ores","items":[{"name":"Adamantite ore","amount":17},{"name":"Coal","amount":117}]},{"name":"Other","items":[{"name":"Coins","amount":20290},{"name":"Snapdragon seed","amount":1},{"name":"Magic logs","amount":17},{"name":"Super restore(4)","amount":3},{"name":"Grimy snapdragon","amount":3},{"name":"rare droptable","amount":1},{"name":"Elite Clue scroll","amount":1},{"name":"Bandos Hilt","amount":1},{"name":"Godsword shard 1","amount":1},{"name":"Godsword shard 2","amount":1},{"name":"Godsword shard 3","amount":1},{"name":"Long bone","amount":1},{"name":"Curved bone","amount":1},{"name":"Pet general graardor","amount":1}]}]},{"name":"Kree arra","drops":[{"name":"100% Drops","items":[{"name":"Big bones","amount":1},{"name":"Feather","amount":7}]},{"name":"Weapons","items":[{"name":"Rune crossbow","amount":1},{"name":"Rune sword","amount":1}]},{"name":"Armour","items":[{"name":"Black d'hide body","amount":1},{"name":"Armadyl Helmet","amount":1},{"name":"Armadyl Chestplate","amount":1},{"name":"Armadyl Chainskirt","amount":1}]},{"name":"Runes and Ammunition","items":[{"name":"Runite bolts","amount":21},{"name":"Mind Rune","amount":550},{"name":"Rune arrow","amount":103},{"name":"Dragon bolts (e)","amount":10}]},{"name":"Other","items":[{"name":"Coins","amount":19500},{"name":"Dwarf weed seed","amount":3},{"name":"Dwarf weed","amount":13},{"name":"Ranging potion(3)","amount":1},{"name":"Super defence(3)","amount":1},{"name":"Yew seed","amount":1},{"name":"Crystal key","amount":1},{"name":"rare droptable","amount":1},{"name":"Elite Clue scroll","amount":1},{"name":"Armadyl Hilt","amount":1},{"name":"Godsword shard 1","amount":1},{"name":"Godsword shard 2","amount":1},{"name":"Godsword shard 3","amount":1},{"name":"Curved bone","amount":1},{"name":"Pet kree'arra","amount":1}]}]}]};
+*/
+	function getJSON(url) {
+        var resp ;
+        var xmlHttp ;
+
+        resp  = '' ;
+        xmlHttp = new XMLHttpRequest();
+
+        if(xmlHttp != null)
+        {
+            xmlHttp.open( "GET", url, false );
+            xmlHttp.send( null );
+            resp = xmlHttp.responseText;
+        }
+		console.log(resp);
+        return resp ;
+    }
+
+	
+	myObj = JSON.parse(getJSON("https://api.myjson.com/bins/1c3ti3"));
+for (i in myObj.bosses) {
+    x += "<h2>" + myObj.bosses[i].name + "</h2>";
+    for (j in myObj.bosses[i].drops) {
+    	x+="<ul>";
+        x +="<li>"+ myObj.bosses[i].drops[j].name 
+        for(d in myObj.bosses[i].drops[j].items){
+        	x+="<ul><li>"+myObj.bosses[i].drops[j].items[d].name+ "<ul><li>"+ myObj.bosses[i].drops[j].items[d].amount +"</li></ul></li></ul>";
+        }
+        x+= "</li></ul>" ;
+    }
+}
+
+document.getElementById("demo").innerHTML = x;
+
+</script>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>

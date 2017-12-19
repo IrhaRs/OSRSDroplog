@@ -1,0 +1,281 @@
+{
+  "bosses": [
+    {
+      "name": "General Graardor",
+      "drops": [
+        {
+          "name": "100% Drops",
+          "items": [
+            {
+              "name": "Big bones",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "name": "Weapons",
+          "items": [
+            {
+              "name": "Rune 2h sword",
+              "amount": 1
+            },
+            {
+              "name": "Rune pickaxe",
+              "amount": 1
+            },
+            {
+              "name": "Rune longsword",
+              "amount": 1
+            },
+            {
+              "name": "Rune sword",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "name": "Armour",
+          "items": [
+            {
+              "name": "Rune platebody",
+              "amount": 1
+            },
+            {
+              "name": "Bandos Tassets",
+              "amount": 1
+            },
+            {
+              "name": "Bandos Chestplate",
+              "amount": 1
+            },
+            {
+              "name": "Bandos Boots",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "name": "Runes and Ammunition",
+          "items": [
+            {
+              "name": "Nature rune",
+              "amount": 65
+            }
+          ]
+        },
+        {
+          "name": "Gems and ores",
+          "items": [
+            {
+              "name": "Adamantite ore",
+              "amount": 17
+            },
+            {
+              "name": "Coal",
+              "amount": 117
+            }
+          ]
+        },
+        {
+          "name": "Other",
+          "items": [
+            {
+              "name": "Coins",
+              "amount": 20290
+            },
+            {
+              "name": "Snapdragon seed",
+              "amount": 1
+            },
+            {
+              "name": "Magic logs",
+              "amount": 17
+            },
+            {
+              "name": "Super restore(4)",
+              "amount": 3
+            },
+            {
+              "name": "Grimy snapdragon",
+              "amount": 3
+            },
+            {
+              "name": "rare droptable",
+              "amount": 1
+            },
+            {
+              "name": "Elite Clue scroll",
+              "amount": 1
+            },
+            {
+              "name": "Bandos Hilt",
+              "amount": 1
+            },
+            {
+              "name": "Godsword shard 1",
+              "amount": 1
+            },
+            {
+              "name": "Godsword shard 2",
+              "amount": 1
+            },
+            {
+              "name": "Godsword shard 3",
+              "amount": 1
+            },
+            {
+              "name": "Long bone",
+              "amount": 1
+            },
+            {
+              "name": "Curved bone",
+              "amount": 1
+            },
+            {
+              "name": "Pet general graardor",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kree arra",
+      "drops": [
+        {
+          "name": "100% Drops",
+          "items": [
+            {
+              "name": "Big bones",
+              "amount": 1
+            },
+            {
+              "name": "Feather",
+              "amount": 7
+            }
+          ]
+        },
+        {
+          "name": "Weapons",
+          "items": [
+            {
+              "name": "Rune crossbow",
+              "amount": 1
+            },
+            {
+              "name": "Rune sword",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "name": "Armour",
+          "items": [
+            {
+              "name": "Black d'hide body",
+              "amount": 1
+            },
+            {
+              "name": "Armadyl Helmet",
+              "amount": 1
+            },
+            {
+              "name": "Armadyl Chestplate",
+              "amount": 1
+            },
+            {
+              "name": "Armadyl Chainskirt",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "name": "Runes and Ammunition",
+          "items": [
+            {
+              "name": "Runite bolts",
+              "amount": 21
+            },
+            {
+              "name": "Mind Rune",
+              "amount": 550
+            },
+            {
+              "name": "Rune arrow",
+              "amount": 103
+            },
+            {
+              "name": "Dragon bolts (e)",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "name": "Other",
+          "items": [
+            {
+              "name": "Coins",
+              "amount": 19500
+            },
+            {
+              "name": "Dwarf weed seed",
+              "amount": 3
+            },
+            {
+              "name": "Dwarf weed",
+              "amount": 13
+            },
+            {
+              "name": "Ranging potion(3)",
+              "amount": 1
+            },
+            {
+              "name": "Super defence(3)",
+              "amount": 1
+            },
+            {
+              "name": "Yew seed",
+              "amount": 1
+            },
+            {
+              "name": "Crystal key",
+              "amount": 1
+            },
+            {
+              "name": "rare droptable",
+              "amount": 1
+            },
+            {
+              "name": "Elite Clue scroll",
+              "amount": 1
+            },
+            {
+              "name": "Armadyl Hilt",
+              "amount": 1
+            },
+            {
+              "name": "Godsword shard 1",
+              "amount": 1
+            },
+            {
+              "name": "Godsword shard 2",
+              "amount": 1
+            },
+            {
+              "name": "Godsword shard 3",
+              "amount": 1
+            },
+            {
+              "name": "Curved bone",
+              "amount": 1
+            },
+            {
+              "name": "Pet kree'arra",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
